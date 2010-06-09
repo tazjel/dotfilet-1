@@ -5,8 +5,8 @@ import XMonad.Hooks.SetWMName
 import XMonad.Hooks.ManageHelpers
  
 main = xmonad $ gnomeConfig
-	{ modMask = mod4Mask
-	, startupHook = startupHook gnomeConfig >> setWMName "LG3D"
+	{
+	  startupHook = startupHook gnomeConfig >> setWMName "LG3D"
 	, manageHook = composeAll 
 	    [ manageHook gnomeConfig
 	    , isFullscreen --> doFullFloat
