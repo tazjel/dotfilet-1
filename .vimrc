@@ -70,6 +70,10 @@ au BufRead,BufNewFile *.c,*.h set formatoptions-=c formatoptions-=o formatoption
 " C: yes
 au BufNewFile *.py,*.pyw,*.c,*.h set fileformat=unix
 
+au BufRead,BufNewFile *.cpp set shiftwidth=2
+au BufRead,BufNewFile *.cpp set expandtab
+
+
 
 " ----------------------------------------------------------------------------
 " The following section contains suggested settings.  While in no way required
