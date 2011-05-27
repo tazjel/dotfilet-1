@@ -1,8 +1,19 @@
+#Disable startup messages
+startup_message off
+
+#Always show the status line at the bottom
 hardstatus on
 hardstatus alwayslastline
-startup_message off
 termcapinfo xterm ti@:te@
-hardstatus string "%{= kG}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
+hardstatus string "%{= kG}%?%-Lw%50L>%?%{.rW}%n*%f %t%?(%u)%?%{-}%{= kG}%?%+Lw%?%11` %=%{..G} %H %{..Y} %m/%d %0c:%s "
+
+#Keep 1000 lines of output in the terminal
+defscrollback 1000
+
+#Turn on monitoring of hidden screens by default
+defmonitor on
+
+#Make 4 starting screens
 screen -t bash1 1
 screen -t bash2 2
 screen -t bash3 3
