@@ -48,7 +48,7 @@ URxvt.boldFont:         xft:Ubuntu Mono:bold:size=13
 URxvt.keysym.C-0:     command:\033]710;xft:Ubuntu Mono-13\007
 URxvt.keysym.C-minus: command:\033]710;xft:Ubuntu Mono-7\007
 URxvt.keysym.C-equal: command:\033]710;xft:Ubuntu Mono-15\007
-URxvt.transparent: true
+URxvt.transparent: false
 !! for lightbg
 ! URxvt.fading: 5
 !! for darkbg transp
