@@ -8,7 +8,8 @@ import qualified XMonad.StackSet as W
 main = do
 	xmobarproc <- spawnPipe "/usr/bin/xmobar ~/.xmonad/xmobar.hs"
 	xmonad $ defaultConfig {
-	  startupHook = setWMName "LG3D"
+	  terminal = "/usr/bin/urxvt"
+	  , startupHook = setWMName "LG3D"
 	  , manageHook = myManageHook
 	}
 

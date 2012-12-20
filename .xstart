@@ -64,12 +64,14 @@ fi
     && nm-applet --sm-disable &
 
 # Set the backbround color
-[ $(which bgset ) ] \
-    && bgset black &
+[ $(which xsetroot ) ] \
+    && xsetroot -solid black &
 
 [ -e "${HOME}/.xstart-private" ] \
     && . "${HOME}/.xstart-private"
 
 trayer --edge top --align right --SetDockType true --SetPartialStrut false --expand true --transparent true --width 10 --tint 0x456030 --height 20 &
+
+echo "About to run xmonad... `date`" > /tmp/eric_xstart_debugs
 
 exec /usr/bin/xmonad
