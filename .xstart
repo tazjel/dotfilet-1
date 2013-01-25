@@ -71,6 +71,8 @@ fi
 
 trayer --edge top --align right --SetDockType true --SetPartialStrut false --expand true --transparent true --width 10 --tint 0x456030 --height 20 &
 
+dropbox start &
+
 echo "About to run xmonad... `date`" > /tmp/eric_xstart_debugs
 
 exec /usr/bin/xmonad
